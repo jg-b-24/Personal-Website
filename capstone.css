@@ -1,0 +1,90 @@
+.grad{
+    background-image: linear-gradient(to right, #637E76 , #f8eadf);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 400px;
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 80px;
+  height: 300px;
+}
+
+@media (max-width:576px){
+  .name{
+    font-size: 55px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+}
+@media (min-width:577px) and (max-width: 768px){
+  .name{
+    font-size: 70px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+}
+.myphoto{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  grid-column-start: 2;
+  
+}
+.intro{
+  grid-column-start: 2;
+}
+.myphoto > img{
+    border-radius: 50%; height: 200px;
+}
+.skill-list{
+  list-style: none;
+  padding: 0;
+}
+.skill-hobbies{
+  flex-direction: column;
+}
+#footer{
+  background-image: linear-gradient(to right, #C69774 , #F8DFD4);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 100px;
+}
+
+
+.creativity , .computer-skills, .willingness{
+  
+  font-size: large;
+  font-weight: bold;
+}
+.skills , .hobbies{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  color: #637E76;
+}
+.hobby-list{
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-rows: max-content max-content;
+  gap: 20px;
+}
+.traveling{
+  grid-column-start: 1;
+}
+.video-editing{
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.traveling , .video-editing{
+  font-weight: bolder;
+  font-size: large;
+}
